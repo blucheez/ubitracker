@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div style="text-align: center;" class="page-header">
+            <h1>UBI Tracker</h1>
+        </div>
+        
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="index.html">Home</a></li>
+          <li role="presentation" class="active"><a href="#">Listing</a></li>
+          <li role="presentation"><a href="about.html">About</a></li>
+        </ul>
+        <div id="box" class="container">
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">Want to submit an experiment?</div>
+                <div class="panel-body">Click <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8SwmkzglaNtDqvpSqTRoGk0wV_olH9dBFFN0bJgvYhmSa3w/viewform?usp=sf_link">
+                here</a> to enter in an experiment. After submitting, click <a href="https://script.google.com/macros/s/AKfycbyKD1sDao0F57qjCC9CoPWi3J4bcm99Bo4aZojSVJhGYi7EFpw/exec">
+                here</a> to update the database</div>
+            </div>
+        </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBI05W3bPEYVoRbyHIrKLR6WibeyGg4guY",
+            authDomain: "ubitracker-68819.firebaseapp.com",
+            databaseURL: "https://ubitracker-68819.firebaseio.com",
+            projectId: "ubitracker-68819",
+            storageBucket: "ubitracker-68819.appspot.com",
+            messagingSenderId: "75194346374"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

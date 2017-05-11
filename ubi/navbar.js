@@ -1,0 +1,2 @@
+$("#nav").append("<p>mney</p>");
+//<ul class="nav nav-tabs">          <li role="presentation" class="active"><a href="#">Home</a></li><li role="presentation"><a href="listing.html">Listing</a></li><li role="presentation"><a href="about.html">About</a></li></ul>
