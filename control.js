@@ -11,6 +11,12 @@ var client = new Twitter({
   access_token_secret: '0qfhcycIMUkJY9Ij0zhW31uXoisSl3yK8PpGVI37TFrDg'
 });
 
+function search(term) {
+    client.get('search/tweets', {q: term}, function(error, tweets, response) {
+       return tweets;
+    });
+    return "something went wrong";
+}
 
 app.use("/ubi",  express.static(__dirname + '/ubi'));
 app.use("/ubi/script.js",  express.static(__dirname + '/ubi/script.js'));
@@ -46,7 +52,7 @@ app.get('/twitterscript.js', function(req, res) {
 });
 
 app.get('/twitsearch', function(req, res) {
-    res.send("get good scrub");
+    res.send(search("ubi"));
 });
 
 var listener = app.listen(app.get('port'), function() {
