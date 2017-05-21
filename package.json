@@ -1,0 +1,23 @@
+{
+  "name": "ubitrack",
+  "version": "0.0.1",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "control.js",
+  "scripts": {
+    "start": "node control.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "firebase": "3.7.4",
+    "firebase-admin": "4.1.4",
+    "require-https": "^1.1.1"
+  },
+  "keywords": [
+    "node",
+    "tjhsst",
+    "express"
+  ],
+  "license": "globalstudiestj"
+}
