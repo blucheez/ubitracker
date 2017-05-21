@@ -13,10 +13,8 @@ var client = new Twitter({
 
 function search(term) {
     client.get('search/tweets', {q: term}, function(error, tweets, response) {
-       console.log(tweets);
        return tweets;
     });
-    return "something went wrong";
 }
 
 app.use("/ubi",  express.static(__dirname + '/ubi'));
