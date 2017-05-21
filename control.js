@@ -51,7 +51,9 @@ app.get('/twitterscript.js', function(req, res) {
 });
 
 app.get('/twitsearch', function(req, res) {
-    res.send(search("ubi"));
+    var temp = search("ubi");
+    console.log(temp);
+    res.send(temp);
 });
 
 var listener = app.listen(app.get('port'), function() {
