@@ -33,6 +33,14 @@ app.get('/listscript.js', function(req, res) {
     res.sendFile(path.join(__dirname + '/ubi/listscript.js'));
 });
 
+app.get('/twitterscript.js', function(req, res) {
+    res.sendFile(path.join(__dirname + '/ubi/twitterscript.js'));
+});
+
+app.get('/twitsearch', function(req, res) {
+    res.send("get good scrub");
+});
+
 var listener = app.listen(app.get('port'), function() {
   console.log( listener.address().port );
 });
