@@ -2,6 +2,14 @@
 var express = require('express');
 var path = require('path')
 var app = express();
+var Twitter = require('twitter');
+
+var client = new Twitter({
+  consumer_key: 'lb8C7aRA2UCIu7pakyHtFHw1y',
+  consumer_secret: 'Q6EFYIzYFm2d9JenLDHN2eUmY50m4p81HWy1MEnAqVX9lTrUMq',
+  access_token_key: '1327782036-c1SyIraSNGf78Z3yhmyUFpPZTpJ4yCANceEWaPj',
+  access_token_secret: '0qfhcycIMUkJY9Ij0zhW31uXoisSl3yK8PpGVI37TFrDg'
+});
 
 
 app.use("/ubi",  express.static(__dirname + '/ubi'));
