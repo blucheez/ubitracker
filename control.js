@@ -5,6 +5,7 @@ var app = express();
 
 
 app.use("/ubi",  express.static(__dirname + '/ubi'));
+app.use("/ubi/script.js",  express.static(__dirname + '/ubi/script.js'));
 
 app.set('port', process.env.PORT || 8080);
 
