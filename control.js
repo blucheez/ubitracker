@@ -29,8 +29,8 @@ app.get('/twitter.html', function(req, res) {
     res.sendFile(path.join(__dirname + '/ubi/twitter.html'));
 });
 
-app.get('/script.js', function(req, res) {
-    res.sendFile(path.join(__dirname + '/ubi/script.js'));
+app.get('/listscript.js', function(req, res) {
+    res.sendFile(path.join(__dirname + '/ubi/listscript.js'));
 });
 
 var listener = app.listen(app.get('port'), function() {
