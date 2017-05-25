@@ -45,7 +45,7 @@ app.get('/twitterscript.js', function(req, res) {
 });
 
 app.get('/twitsearch', function(req, res) {
-    client.get('search/tweets', {q: "ubi"}, function(error, tweets, response) {
+    client.get('search/tweets', {q: "basic income"}, function(error, tweets, response) {
        res.send(tweets);
     });
 });

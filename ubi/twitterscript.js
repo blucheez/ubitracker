@@ -1,3 +1,14 @@
-$.get("https://api.twitter.com/1.1/search/tweets.json?q=%22ubi%22%20OR%20%22basic%20income%22%20OR%20%22income%20experiment%22&src=typd", function(data) {
-    console.log(data);
+$.get("https://ubitracker.herokuapp.com/twitsearch", function(data) {
+    var stats = data.statuses;
+    for(var i = 0; i < stats.length; i++) {
+        var name = stats[i].user.name;
+        var text = stats[i].user.text;
+        $("#frame").append("<div id = 'pane" + i + "' class='panel panel-default'></div>");
+        
+        $("#pane" + i).append("<div id='title" + i + "' class='panel-panel-heading'></div>");
+            $("#title" + i).append(name + " says...");
+        
+         $("#pane" + i).append("<div id='body" + i + "' class='panel-body'></div>");
+                $("#body" + i).append(text);
+    }
 });
