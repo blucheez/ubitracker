@@ -4,7 +4,7 @@ $.get("https://ubitracker.herokuapp.com/twitsearch", function(data) {
     for(var i = 0; i < stats.length; i++) {
         var name = stats[i].user.name;
         var text = stats[i].text;
-        $("#frame").append("<div id = 'pane" + i + "' class='panel panel-default'></div>");
+        $("#frame").append("<div id = 'pane" + i + "' class='panel panel-primary'></div>");
         
         $("#pane" + i).append("<div id='title" + i + "' class='panel-heading'></div>");
             $("#title" + i).append(name + " says...");
