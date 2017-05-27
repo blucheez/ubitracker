@@ -4,12 +4,12 @@ database.on('value', function(snapshot) {
     snapshot.forEach(function(child){
         var experiment = child.val();
         console.log(experiment);
-        $("#box").append("<div id = 'pane" + index + "' class='panel panel-default'></div>");
+        $("#box").append("<div style='margin: 0 auto; margin-top: 2em;  width: 70%;' id = 'pane" + index + "' class='mdl-card mdl-shadow--4dp'></div>");
         
-            $("#pane" + index).append("<div id='title" + index + "' class='panel-heading'></div>");
+            $("#pane" + index).append("<div class='mdl-card__title'><h3 id='title" + index + "' class='mdl-card__title-text'></h3></div>");
                 $("#title" + index).append(experiment.name);
         
-            $("#pane" + index).append("<div id='body" + index + "' class='panel-body'></div>");
+            $("#pane" + index).append("<div id='body" + index + "' class='mdl-card__supporting-text'></div>");
                 $("#body" + index).append("<div><b>Time:</b> " + experiment.time.start + " to " + experiment.time.end + "</div>");
                 $("#body" + index).append("<div><b>Location:</b> " + experiment.location.words + "</div><br>");
                 
