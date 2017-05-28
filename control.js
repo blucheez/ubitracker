@@ -1,6 +1,7 @@
 #!/usr/bin/nodejs
 var express = require('express');
 var path = require('path');
+var favicon = require('serve-favicon');
 var app = express();
 var Twitter = require('twitter');
 
@@ -11,7 +12,7 @@ var client = new Twitter({
   access_token_secret: '0qfhcycIMUkJY9Ij0zhW31uXoisSl3yK8PpGVI37TFrDg'
 });
 
-app.use(express.favicon(__dirname + '/ubi/favicon.ico'));
+app.use(favicon(path.join(__dirname + '/ubi/favicon.ico')));
 
 app.use("/ubi",  express.static(__dirname + '/ubi'));
 app.use("/ubi/script.js",  express.static(__dirname + '/ubi/script.js'));
