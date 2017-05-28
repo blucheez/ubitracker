@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "express": "4.13.3",
+    "express-favicon": "^2.0.0",
     "firebase": "3.7.4",
     "firebase-admin": "4.1.4",
     "require-https": "^1.1.1"

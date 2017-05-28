@@ -1,6 +1,7 @@
 #!/usr/bin/nodejs
 var express = require('express');
-var path = require('path')
+var path = require('path');
+var favicon = require('express-favicon');
 var app = express();
 var Twitter = require('twitter');
 
@@ -10,6 +11,8 @@ var client = new Twitter({
   access_token_key: '1327782036-c1SyIraSNGf78Z3yhmyUFpPZTpJ4yCANceEWaPj',
   access_token_secret: '0qfhcycIMUkJY9Ij0zhW31uXoisSl3yK8PpGVI37TFrDg'
 });
+
+app.use(favicon(__dirname + '/ubi/favicon.ico'));
 
 app.use("/ubi",  express.static(__dirname + '/ubi'));
 app.use("/ubi/script.js",  express.static(__dirname + '/ubi/script.js'));
