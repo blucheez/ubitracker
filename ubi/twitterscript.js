@@ -1,3 +1,8 @@
+$.get("https://news.google.com/news/section?q=ubi&output=rss", function(data) {
+    console.log(data);
+    
+});
+
 $.get("https://ubitracker.herokuapp.com/twitsearch", function(data) {
     console.log(data);
     var stats = data.statuses;
