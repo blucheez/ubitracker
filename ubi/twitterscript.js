@@ -6,7 +6,7 @@ $.get("https://ubitracker.herokuapp.com/twitsearch", function(data) {
         var text = stats[i].text;
         $("#frame").append("<div style='margin: 0 auto; margin-top: 2em;  width: 70%;' id = 'pane" + i + "' class='mdl-card mdl-shadow--4dp'></div>");
         
-        $("#pane" + i).append("<div class='mdl-card__title'><h3 id='title" + i + "' class='mdl-card__title-text'></h3></div>");
+        $("#pane" + i).append("<div style='background-color: '#1DA1F2'; color: white;' class='mdl-card__title'><h3 id='title" + i + "' class='mdl-card__title-text'></h3></div>");
             $("#title" + i).append(name + " says...");
         
          $("#pane" + i).append("<div id='body" + i + "' class='mdl-card__supporting-text'></div>");
