@@ -23,10 +23,6 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/ubi/index.html'));
 });
 
-app.get('/index.html', function(req, res) {
-    res.sendFile(path.join(__dirname + '/ubi/index.html'));
-});
-
 app.get('/listing.html', function(req, res) {
     res.sendFile(path.join(__dirname + '/ubi/listing.html'));
 });
