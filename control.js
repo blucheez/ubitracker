@@ -20,7 +20,7 @@ app.use("/ubi/script.js",  express.static(__dirname + '/ubi/script.js'));
 app.set('port', process.env.PORT || 8080);
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/ubi/about.html'));
+    res.sendFile(path.join(__dirname + '/ubi/listing.html'));
 });
 
 app.get('/listing.html', function(req, res) {
