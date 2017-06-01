@@ -26,8 +26,9 @@ database.on('value', function(snapshot) {
                 
                 var images = experiment.images.split(",");
                 console.log(images);
+                $("#pane" + index).append("<div id='images" + index + "' class='mdl-card__media'></div>");
                 for(var f = 0; f < images.length; f++) {
-                    $("#body" + index).append("<img src=" + images[f] + "></img>");
+                    $("#images" + index).append("<img src=" + images[f] + "></img>");
                 }
                 
         index = index + 1;
