@@ -1,11 +1,4 @@
-$.ajax({
-    url: "https://news.google.com/news/section?q=ubi&output=rss",
-    type: "GET",
-    crossDomain: true,
-    success: function(data) {
-        console.log(data);
-    }
-});
+
 
 $.get("https://ubitracker.herokuapp.com/twitsearch", function(data) {
     console.log(data);
